@@ -1,20 +1,57 @@
-# Virtual environment
+
+# Python virtual environments
 venv/
 .venv/
+env/
+ENV/
 
-# Python cache
+# Python cache files
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+.pytest_cache/
 
-# Jupyter
+# Jupyter Notebook
 .ipynb_checkpoints/
 
-# Environment variables
+# Environment variables and secrets
 .env
+.env.*
+!.env.example
 
-# Dataset
+# Dataset files (keep datasets local)
 data/*.csv
+data/*.xlsx
+data/*.parquet
+
+# Model experiment temporary files
+*.joblib
+*.tmp
+
+# Keep trained models required by the application
+# Do not ignore models/*.pkl
 
 # OS files
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# IDE settings
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Build and distribution
+build/
+dist/
+*.egg-info/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Temporary files
+*.bak
+*.swp
+*.swo

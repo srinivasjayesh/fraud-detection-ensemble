@@ -1,0 +1,2 @@
+Model,Threshold,Precision,Recall,F1 Score,PR-AUC,ROC-AUC,True Negatives,False Positives,False Negatives,True Positives
+Random Forest + SMOTE,0.5,0.9193548387096774,0.8028169014084507,0.8571428571428571,0.8408620626550956,0.9649896176153134,42483,5,14,57
